@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Verydarkblue1); 
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+html{
+    font-size: 10px;
+}
+
+:root{
+    --Verydarkblue1: hsl(217, 54%, 11%);
+    --Verydarkblue2: hsl(216, 50%, 16%);
+    --Verydarkblue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+.container{
+    border-radius: 16px;
+    height: 540px;
+    width: 320px;
+    background-color: var(--Verydarkblue2);
+    padding: 16px;
+}
+
+.container_image{
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat ;
+    width: 100%;
+    height: 288px;
+}
+
+.container_title{
+    color: aliceblue;
+    padding-top: 20px;
+}
+.container_title:hover{
+    color: var(--Cyan);
+}
+
+.container_text{
+    font-size: 1.5rem;
+    line-height: 25px; 
+    color: var(--Softblue);
+    font-weight: 400;
+    padding-top: 13px;
+}
+
+.container_1{
+    padding-top: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+}
+.subcontainer_1{
+    /* vertical-align: middle; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0 20px; 
+}
+
+.container_text_1{
+    /* padding: 3px 0 20px; */
+    color: var(--Cyan);
+    gap: 8px;
+}
+.container_text_2{
+    color: var(--Softblue);
+    /* padding: 5px 0 20px; */
+
+}
+
+.container_2{
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    align-items: center;
+}
+.container_image_1{
+    background-image: url(./images/image-avatar.png);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    width: 30px;
+    height: 31px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 100%;
+}
+.ojo{
+    background-color: hsla(178, 100%, 50%, 0.311);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.container_image:hover .ojo{
+    visibility: visible;
+}
+
+.container_text_3{
+    padding-left: 17px;
+    font-size: 120%;
+    color: var(--Softblue);
+}
+.container_text_4{
+    color: var(--White);
+}
+.container_text_4:hover{
+    color: var(--Cyan);
+}
+
+hr{
+    opacity: 10%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 13px;
+    color: aliceblue;
+}
+.attribution a {
+     color: hsla(14, 67%, 45%, 0.882); 
+    text-shadow: 1px 1px 3px hsla(342, 81%, 67%, 0.795);
+    }
+
+
+@media (min-width:1440px){
+        body{
+            padding: 150px 0;
+        }
+}
